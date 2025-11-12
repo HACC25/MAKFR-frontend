@@ -1,0 +1,299 @@
+/* -- // GENERAL CSS */
+/* -- */
+/* 1. Use a modern, inherited box model */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* Set the default font size for rem units and enable smooth scrolling */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px; /* You can adjust this base value */
+}
+
+/* 2. Remove default margins on common elements for a clean slate */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, ul, ol, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Ensure images and media are responsive */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 4. Inherit fonts for form elements */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 5. Remove list default styling (bullets/numbers and indentation) - optional, use as needed */
+ul, ol {
+  list-style: none;
+}
+
+/* 6. Base application styles (add your own as needed) */
+body {
+  /* Use a good looking sans-serif local font stack */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5; /* Improved line height for legibility */
+  background-color: #ffffff; /* Default background */
+  color: #333333; /* Default text color */
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color, then style links specifically */
+}
+
+
+/* -- // CUSTOM CSS */
+/* -- */
+html, body {
+  margin: 0; /* Remove default browser margins */
+  padding: 0; /* Remove default browser padding */
+}
+
+/* -- Sitewide Header */
+.sitewide-header {
+  background: rgba(10, 10, 10);
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+
+#sitewide-name {
+  background-color: transparent;
+  color: white;
+  width: 50%;
+  font-weight: normal;
+}
+
+#sitewide-login {
+  background-color: transparent;
+  color: white;
+  text-decoration: underline;
+  width: 50% ;
+  text-align: right;
+  font-weight: lighter;
+}
+
+/* -- Nav Header */
+.nav-header {
+  background: rgba(25, 25, 25);
+  width: 100%;
+  padding-left: 5.1%;
+  padding-right: 5%;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 48px;
+  box-shadow: 2px 5px 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.nav-button {
+  background-color: rgba(25, 25, 25);
+  color: white;
+  width:fit-content;
+  padding-right: 1em;
+  font-weight:lighter;
+  font-size:16px;
+}
+
+#nav-selected {
+  font-weight:600;
+}
+
+/* -- Theme */
+#theme {
+  
+  height: 100vh; /* 100% of the viewport height */
+  /* Add any other styling like background-color, etc. */
+  background-color: #333333;
+}
+
+/* -- Wrap */
+#wrap {
+  
+}
+
+/* -- Inner Wrap */
+#inner-wrap {
+  background-color: #333333;
+  height: auto;
+  padding: 0 5%;
+  padding-bottom: 3em;
+  padding-top: 100px;
+}
+
+/* -- Page */
+#page {
+  background-color: white;
+  height: auto;
+  border-radius: 0.5em;
+  box-shadow: -10px 12px 18px 8px rgba(0, 0, 0, 0.35);
+}
+
+#pageContent {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+/* -- New Page */
+#newPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+/* -- Page Elements */
+.pageNavBar {
+  background-color: #ffffff;
+  width: 25%;
+  height: 100%;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  align-items: center;
+  border-radius: 0.5em;
+}
+
+.pageNavSearch {
+  padding: 0.5em;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: -10px 0px 20px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 97%;
+  margin: 0 auto;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  font-weight: 700;
+}
+
+.pageNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding-top: 0.5em;
+}
+
+.pageNavItem {
+  padding: 0.5em;
+  width: 97%;
+  /*border-bottom-style: groove;*/
+  box-shadow: -10px 0px 10px -0.5px rgba(0, 0, 0, 0.299);
+}
+
+.pageCenter {
+  background-color: #d4d4d4;
+  width: 75%;
+  height: 100%;
+  border-radius: 0.5em;
+  box-shadow: 7px 0px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pageCenterContent {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+#jobHeader {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5em;
+}
+
+#jobHeaderArea {
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+#jobHeaderInfo {
+  width: 80%;
+}
+
+#jobHeaderName {
+
+}
+
+#jobHeaderSub {
+  padding-left: 0.2em;
+}
+
+#jobHeaderActions {
+  width: 20%;
+  text-align: right;
+  align-content: center;
+  padding-right: 1em;
+}
+
+#applyButton {
+  background-color: #333333;
+  color: white;
+  border-radius: 0.5em;
+  border: 1.8px solid #1d1d1db7;
+  box-shadow: 0px 0px 18px 8px rgba(0, 0, 0, 0.35);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#jobHeaderMisc {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 2em;
+}
+
+#jobViewOptions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  border-top: #d4d4d4;
+  border-bottom: #d4d4d4;
+  border-top-style:groove;
+  border-bottom-style:groove;
+  padding-top: 0.2em;
+  padding-bottom: 0.3em;
+}
+
+.jobViewOptionItem {
+  border: none;
+  background-color: transparent;
+}
+
+#jobViewOptionItemSelected {
+  border-bottom-style: groove;
+  border-color: #000000;
+}
+
+#jobView {
+  padding-top: 1.2em;
+
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+p {
+  height: fit-content
+}

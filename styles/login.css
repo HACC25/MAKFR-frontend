@@ -1,0 +1,82 @@
+/* -- // CUSTOM CSS */
+#loginPage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: -10px 12px 18px 8px rgba(0, 0, 0, 0.35);
+    padding: 2em;
+}
+
+#pageContentLogin {
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pageLogin {
+    background-color: transparent;
+    height: 70vh;
+    border-radius: 0.5em;
+    align-content: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#loginHeader {
+    padding-bottom: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+#loginEntry {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.loginEntryField {
+    width: 100%;
+    border: none;
+    border-bottom-style: groove;
+    border-radius: 0.3em;
+    padding-left: 0.5em;
+}
+
+#loginError {
+    color: red;
+    text-align: left;
+    font-style: italic;
+}
+
+#noError {
+    display: none;
+}
+
+#loginFooter {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#loginSubmit {
+    background-color: #333333;
+    color: white;
+    border-radius: 0.5em;
+    border: 1.8px solid #1d1d1db7;
+    box-shadow: 0px 0px 18px 8px rgba(0, 0, 0, 0.35);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
