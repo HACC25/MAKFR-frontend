@@ -46,7 +46,10 @@
     width: 100%;
     border: none;
     border-bottom-style: groove;
+<<<<<<< HEAD
+=======
     border-radius: 0.3em;
+>>>>>>> 22ca347b2276fa43292f32f66d9c865d19b87c95
     padding-left: 0.5em;
 }
 
