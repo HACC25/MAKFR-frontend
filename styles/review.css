@@ -1,0 +1,64 @@
+#candidatesList {
+    padding-top: -0.1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.6em;
+}
+
+.candiatesListItem {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1em;
+    box-shadow: 0px 0px 10px -0.5px rgba(0, 0, 0, 0.299);
+    align-items: center;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.candidateName {
+    width: 50%;
+    text-align: left;
+}
+
+.candidateStatus {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    overflow-x: auto;
+    justify-content: right;
+}
+
+.candiatesStatusTag {
+    background-color: #333333;
+    color: white;
+    border-radius: 0.5em;
+    border: 1.8px solid #1d1d1db7;
+    font-size: smaller;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+#qualified {
+    background-color: #53db19;
+    border: 1.8px solid #4fd516a4;
+}
+
+#notQualified {
+    background-color: #d72424;
+    border: 1.8px solid #ff4d4dba;
+}
+
+#reqReview {
+    background-color: #d9a30d;
+    border: 1.8px solid #d9a30d80;
+}
+
+.candidateEdit {
+    width: 20%;
+    text-align: right;
+}
