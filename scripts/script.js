@@ -1,7 +1,7 @@
 loginButton = document.getElementById("loginSubmit");
 
 loginButton.addEventListener("click", function() {
-  window.location.replace("../pages/apply.html");
+  window.location.href = "../pages/apply.html";
 })
 
 function applyPage() {
