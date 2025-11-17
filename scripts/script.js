@@ -1,10 +1,4 @@
-const loginButton = document.getElementById("loginSubmit");
-
-loginButton.addEventListener("click", function() {
-  window.location.replace("../pages/apply.html");
-})
-
-const applyButton = document.getElementById("loginSubmit");
+loginButton = document.getElementById("loginSubmit");
 
 loginButton.addEventListener("click", function() {
   window.location.replace("../pages/apply.html");
