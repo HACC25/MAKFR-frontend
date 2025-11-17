@@ -29,13 +29,14 @@
             <!-- Main Header -->
             <div class="sitewide-header"> 
                 <h1 id="sitewide-name"> MAKFR </h1>
-                <h3 id="sitewide-login"> Sign In </h3>
+                <h3 id="sitewide-login" onclick="signInPage()"> Sign In </h3>
             </div>
             <!-- Nav Header -->
             <div class="nav-header"> 
-                <button class="nav-button"> Apply </button>
-                <button class="nav-button" id="nav-selected"> Review </button>
+                <button class="nav-button" id="nav-selected" onclick="applyPage()"> Apply </button>
+                <button class="nav-button" onclick="reviewPage()"> Review </button>
             </div>
+            
             <!-- Wrap Content -->
             <div id="inner-wrap"> 
                 <!-- Page --> 
@@ -143,7 +144,7 @@
     </div>
 
     <!-- // Scripts -->
-    <!-- <script src="script.js"></script> not in use yet-->
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>
